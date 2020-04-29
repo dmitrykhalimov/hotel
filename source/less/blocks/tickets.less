@@ -1,9 +1,10 @@
 .tickets {
-  width: 480px;
   min-height: 610px;
   margin: 0 auto;
   text-align: center;
   .outline(lightseagreen);
+
+  background-color: #F7F7F7;
 }
 
 .tickets__heading {
@@ -13,6 +14,9 @@
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  padding-top: 35px;
+  padding-bottom: 16px;
 }
 
 .tickets__title {
@@ -22,6 +26,7 @@
   font-weight: 900;
   font-size: 23px;
   line-height: 31px;
+  padding-bottom: 9px;
 }
 
 .tickets__text {
@@ -35,15 +40,69 @@
 .tickets__list {
   .list-reset;
   list-style: none;
+  width: 400px;
+  margin: 0 auto;
 }
 
 .tickets__button {
+  display: inline-block;
+
+  position: relative;
+
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+
+  padding-left: 29px;
+  padding-top: 17px;
+
+  margin-top: 20px;
+
+  background-color: #FF7931;
+  color: #ffffff;
+
+  width: 170px;
+  height: 47px;
 }
 
-.tickets-wrapper {
-  .outline;
+.tickets__button::before {
+  position: absolute;
+  top: 7px;
+  right: -16px;
+  content: "";
+  width: 68px;
+  height: 68px;
+
+  background: url("../../img/icon-arrow.svg") 0 0 no-repeat;
+
+
+}
+
+.tickets__item {
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.tickets__item::before {
+  position: absolute;
+  left: 150px;
+
+  bottom: -23px;
+  content: "";
+  height: 1px;
+  width: 100px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.tickets__item:nth-of-type(2),
+.tickets__item:nth-of-type(3) {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tickets__item:nth-of-type(3)::before {
+  display: none;
 }
