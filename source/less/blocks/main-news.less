@@ -1,8 +1,7 @@
 .main-news {
-  position: relative;
   margin: 0 auto;
 
-  background: url("../../img/bg__hotel.jpg");
+  background: url("../img/bg__hotel.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -10,15 +9,15 @@
   min-width: 1440px;
 }
 
-.main-news::before {
+.main-news__description::before {
   position: absolute;
   content: "";
   width: 55px;
   height: 55px;
-  left: 693px;
-  top: 45px;
+  left: 202px;
+  top: -303px;
 
-  background: url("../../img/icon-hotel.svg");
+  background: url("../img/icon-hotel.svg");
 }
 
 .main-news__heading {
@@ -37,12 +36,9 @@
 }
 
 .main-news__description {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  position: relative;
   font-size: 14px;
   line-height: 23px;
-  /* or 150% */
 
   text-align: center;
 
@@ -51,9 +47,5 @@
   margin: 0 auto;
   padding-bottom: 47px;
 
-  text-align: center;
   width: 460px;
 }
-
-
-

@@ -80,9 +80,9 @@ gulp.task("sprite", function() {
     .pipe(svgstore({
       inlineSvg: true
     }))
-/*    .pipe(imagemin([
+   .pipe(imagemin([
       imagemin.svgo()
-    ])) */
+    ]))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 })
@@ -136,4 +136,3 @@ gulp.task("compress", function () {
 });
 
 gulp.task("start", gulp.series("build", "server"));
-
