@@ -1,10 +1,27 @@
 .tickets {
-  min-height: 610px;
+  position: relative;
   margin: 0 auto;
+  margin-bottom: 50px;
+
   text-align: center;
-  .outline(lightseagreen);
 
   background-color: #F7F7F7;
+  z-index: -2;
+}
+
+.tickets::before {
+  position: absolute;
+  left: 365px;
+
+  top: -70px;
+
+  width: 707px;
+  height: 707px;
+
+  content:"";
+  background-color: white;
+  border-radius: 500px;
+  z-index: -1;
 }
 
 .tickets__heading {
@@ -19,6 +36,12 @@
   padding-bottom: 16px;
 }
 
+.tickets__wrapper {
+/*  background-color: yellow; */
+  border-top-left-radius: 150px;
+  width: 700px;
+  margin: 0 auto;
+}
 .tickets__title {
   .list-reset;
   font-family: Playfair Display;
@@ -60,6 +83,7 @@
   padding-top: 17px;
 
   margin-top: 20px;
+  margin-bottom: 35px;
 
   background-color: #FF7931;
   color: #ffffff;
